@@ -8,3 +8,6 @@
 /dataSources.local.xml
 # Zeppelin ignored files
 /ZeppelinRemoteNotebooks/
+/.name
+/conventionalCommit.xml
+/git_toolbox_prj.xml
