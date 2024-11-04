@@ -4,12 +4,12 @@ plugins {
 }
 
 group = 'com.aupma.logto'
-version = '0.0.0'
+version = '0.0.1'
 
 publishing {
     publications {
         maven(MavenPublication) {
-            artifactId = 'management-client-java' as Publication
+            artifactId = 'management-client-java'
             from components.java
         }
     }
@@ -31,6 +31,9 @@ dependencies {
 
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    compileOnly 'org.projectlombok:lombok:1.18.34'
+    annotationProcessor 'org.projectlombok:lombok:1.18.34'
 }
 
 test {
